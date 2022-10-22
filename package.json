@@ -17,6 +17,8 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "lint:ts": "eslint src/**/*.{ts,tsx}",
+        "lint:paths": "path-linter",
+        "lint": "concurrently \"npm:lint:*\"",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
     },
     "dependencies": {
@@ -25,9 +27,11 @@
         "react-dom": "18.2.0"
     },
     "devDependencies": {
+        "@attilagyongyosi/path-linter": "2.1.5",
         "@attilagyongyosi/eslint-config": "0.4.0",
         "@typescript-eslint/parser": "5.40.1",
         "@typescript-eslint/eslint-plugin": "5.40.1",
+        "concurrently": "7.5.0",
         "eslint": "8.26.0",
         "prettier": "2.7.1",
         "typescript": "4.8.4"
