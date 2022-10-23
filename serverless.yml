@@ -1,0 +1,13 @@
+org: attilagyongyosi
+app: attilagyongyosi-website
+name: attilagyongyosi-blog
+
+component: website
+
+inputs:
+    bucketName: blog${env:STAGE}.attilagyongyosi.com
+    region: eu-central-1
+    src:
+        src: ./public
+        hook: npm run build
+        dist: ./public
