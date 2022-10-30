@@ -31,6 +31,8 @@
     "devDependencies": {
         "@attilagyongyosi/path-linter": "2.1.5",
         "@attilagyongyosi/eslint-config": "0.4.0",
+        "@commitlint/cli": "17.1.2",
+        "@commitlint/config-conventional": "17.1.0",
         "@serverless/components": "3.18.2",
         "@typescript-eslint/parser": "5.40.1",
         "@typescript-eslint/eslint-plugin": "5.40.1",
