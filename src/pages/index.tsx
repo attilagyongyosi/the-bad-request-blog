@@ -1,6 +1,14 @@
 import * as React from 'react';
-import { useStaticQuery } from 'gatsby';
-import { versionQuery } from '../queries/version.query';
+import { graphql, useStaticQuery } from 'gatsby';
+
+const versionQuery = graphql`
+    query {
+        site {
+            siteMetadata {
+                version
+            }
+        }
+    }`;
 
 function IndexPage() {
     const version = useStaticQuery(versionQuery);
