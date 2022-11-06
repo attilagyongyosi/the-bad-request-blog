@@ -16,7 +16,7 @@ function IndexPage() {
     return (
         <main>
             <h1>This is a beginning of a beautiful friendship</h1>
-            <footer>{version.site.siteMetadata.version}</footer>
+            <footer data-testid="br-footer">{version.site.siteMetadata.version}</footer>
         </main>
     );
 }
