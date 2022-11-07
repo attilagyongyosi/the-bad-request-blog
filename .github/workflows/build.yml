@@ -8,6 +8,13 @@ jobs:
         steps:
             - name: Checkout Code
               uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: git config
+              run: |
+                git config user.name "${GITHUB_ACTOR}"
+                git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
             - name: Install Dependencies
               uses: actions/setup-node@v3
@@ -16,3 +23,6 @@ jobs:
             - run: npm install
             - run: npm run build
             - run: npm test
+            - run: npm run release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
