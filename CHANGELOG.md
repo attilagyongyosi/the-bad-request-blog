@@ -1,5 +1,12 @@
 
 
+# [0.3.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.2.0...0.3.0) (2022-11-07)
+
+
+### Features
+
+* integrating release-it in GitHub Action ([b048edf](https://github.com/attilagyongyosi/the-bad-request-blog/commit/b048edfb43c999296077a76640d8a5c09358a587))
+
 # 0.2.0 (2022-11-07)
 
 
