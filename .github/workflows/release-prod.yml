@@ -1,0 +1,32 @@
+name: Release latest version to Prod
+
+on: workflow_dispatch
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout Code
+                uses: actions/checkout@v3
+                with:
+                    fetch-depth: 0
+
+            -   name: Install Dependencies
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 16
+            -   run: npm install
+            -   run: npm test
+            -   run: npm run build
+
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploying Artifact to SLS Prod Stage
+              id: sls-deploy-prod
+              run: npm run deploy:prod
+              env:
+                  SERVERLESS_ACCESS_KEY: ${{ secrets.SLS_ACCESS_KEY }}
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
