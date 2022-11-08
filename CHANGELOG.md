@@ -1,5 +1,18 @@
 
 
+# [0.4.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.3.0...0.4.0) (2022-11-08)
+
+
+### Bug Fixes
+
+* fixing import-gpg GH Action parameters for v5 ([67217e9](https://github.com/attilagyongyosi/the-bad-request-blog/commit/67217e958f9839e80050e1127cc9a66752a591ed))
+* removing tagArgs from release-it config as GH action is set to sign tags by default ([26aaf0f](https://github.com/attilagyongyosi/the-bad-request-blog/commit/26aaf0f7ee05d843947b9a13359e5d96215c0061))
+
+
+### Features
+
+* attempt to sign CI commits and tags ([62fe798](https://github.com/attilagyongyosi/the-bad-request-blog/commit/62fe79892810bea85e934558fa031b680d9d18c2))
+
 # [0.3.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.2.0...0.3.0) (2022-11-07)
 
 
