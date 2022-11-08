@@ -4,11 +4,9 @@ name: attilagyongyosi-blog
 
 component: website
 
-stage: ${env:STAGE}
-
 inputs:
-    bucketName: blog${env:STAGE}.attilagyongyosi.dev
-    domain: blog${env:STAGE}.attilagyongyosi.dev
+    bucketName: ${param:domainName}
+    domain: ${param:domainName}
     region: eu-central-1
     src:
         src: ./public

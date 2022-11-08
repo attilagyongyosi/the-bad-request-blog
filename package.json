@@ -23,7 +23,8 @@
         "test": "vitest run",
         "test:dev": "vitest",
         "release": "release-it",
-        "deploy:dev": "cross-env STAGE=-dev components deploy --stage dev"
+        "deploy:dev": "components deploy --stage dev",
+        "deploy:prod": "components deploy --stage prod"
     },
     "dependencies": {
         "gatsby": "4.24.4",
