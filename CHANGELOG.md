@@ -1,5 +1,7 @@
 
 
+## [0.7.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.0...0.7.1) (2022-11-08)
+
 # [0.7.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.6.0...0.7.0) (2022-11-08)
 
 
