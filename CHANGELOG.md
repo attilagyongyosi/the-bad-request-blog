@@ -1,5 +1,17 @@
 
 
+# [0.5.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.4.0...0.5.0) (2022-11-08)
+
+
+### Bug Fixes
+
+* moving testing phase before production build in CI config ([e68ac26](https://github.com/attilagyongyosi/the-bad-request-blog/commit/e68ac26cc3145e997b9a665dd5a848533f4cdc14))
+
+
+### Features
+
+* integrating Serverless deployment to CI pipeline ([5f6e65d](https://github.com/attilagyongyosi/the-bad-request-blog/commit/5f6e65d1a2c5c4a417de988214405a9e430b8840))
+
 # [0.4.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.3.0...0.4.0) (2022-11-08)
 
 
