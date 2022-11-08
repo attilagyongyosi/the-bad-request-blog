@@ -36,3 +36,11 @@ jobs:
             - run: npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: Deploy to AWS
+              run: npm run deploy:dev
+              env:
+                  SERVERLESS_ACCESS_KEY: ${{ secrets.SLS_ACCESS_KEY }}
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
