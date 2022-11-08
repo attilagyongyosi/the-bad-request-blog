@@ -1,5 +1,14 @@
 
 
+# [0.7.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.6.0...0.7.0) (2022-11-08)
+
+
+### Features
+
+* adding GitHub workflow that deploys to production ([2f5cb53](https://github.com/attilagyongyosi/the-bad-request-blog/commit/2f5cb5324846e6bc9bcee66d9103b913dfc56268))
+* updating Serverless config, adding ability to deploy production ([aabfaef](https://github.com/attilagyongyosi/the-bad-request-blog/commit/aabfaefd8a512fa5ed3b33c0f42a64187a7825e7))
+* using npm ci instead of npm install for GitHub workflows ([a282ace](https://github.com/attilagyongyosi/the-bad-request-blog/commit/a282aceb7c274390fea02b19c98a86ee34446e52))
+
 # [0.6.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.5.0...0.6.0) (2022-11-08)
 
 
