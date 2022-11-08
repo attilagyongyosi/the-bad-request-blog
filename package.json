@@ -44,7 +44,6 @@
         "@typescript-eslint/eslint-plugin": "5.40.1",
         "@vitest/ui": "0.24.5",
         "concurrently": "7.5.0",
-        "cross-env": "7.0.3",
         "eslint": "8.26.0",
         "husky": "8.0.1",
         "jsdom": "20.0.2",
