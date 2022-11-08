@@ -11,10 +11,20 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: Import GPG key
+              id: import_gpg
+              uses: crazy-max/ghaction-import-gpg@v5
+              with:
+                  git_user_signingkey: true
+                  git_commit_gpgsign: true
+              env:
+                  GPG_PRIVATE_KEY: ${{ secrets.SIGN_GPG_KEY }}
+                  PASSPHRASE: ${{ secrets.SIGN_GPG_PASS }}
+
             - name: git config
               run: |
                 git config user.name "${GITHUB_ACTOR}"
-                git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+                git config user.email "attilagyongyosi0@gmail.com"
 
             - name: Install Dependencies
               uses: actions/setup-node@v3
