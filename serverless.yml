@@ -4,10 +4,11 @@ name: attilagyongyosi-blog
 
 component: website
 
+stage: ${env:STAGE}
+
 inputs:
-    bucketName: blog${env:STAGE}.attilagyongyosi.com
+    bucketName: blog${env:STAGE}.attilagyongyosi.dev
+    domain: blog${env:STAGE}.attilagyongyosi.dev
     region: eu-central-1
     src:
         src: ./public
-        hook: npm run build
-        dist: ./public
