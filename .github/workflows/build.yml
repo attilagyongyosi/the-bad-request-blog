@@ -16,10 +16,10 @@ jobs:
               uses: crazy-max/ghaction-import-gpg@v5
               with:
                   git_user_signingkey: true
+                  git_tag_gpgsign: true
                   git_commit_gpgsign: true
-              env:
-                  GPG_PRIVATE_KEY: ${{ secrets.SIGN_GPG_KEY }}
-                  PASSPHRASE: ${{ secrets.SIGN_GPG_PASS }}
+                  gpg_private_key: ${{ secrets.SIGN_GPG_KEY }}
+                  passphrase: ${{ secrets.SIGN_GPG_PASS }}
 
             - name: git config
               run: |
