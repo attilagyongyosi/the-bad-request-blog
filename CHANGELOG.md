@@ -1,5 +1,12 @@
 
 
+## [0.7.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.1...0.7.2) (2022-11-08)
+
+
+### Bug Fixes
+
+* unifying production deployment workflow ([4c9001f](https://github.com/attilagyongyosi/the-bad-request-blog/commit/4c9001f567381cacce4c1739d30bf567b2af3c96))
+
 ## [0.7.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.0...0.7.1) (2022-11-08)
 
 # [0.7.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.6.0...0.7.0) (2022-11-08)
