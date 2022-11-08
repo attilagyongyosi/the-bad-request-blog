@@ -1,5 +1,12 @@
 
 
+# [0.6.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.5.0...0.6.0) (2022-11-08)
+
+
+### Features
+
+* updating Serverless configuration, including new domain ([15010b6](https://github.com/attilagyongyosi/the-bad-request-blog/commit/15010b6b697b36ee5f8caa618c05fbb3b82490e6))
+
 # [0.5.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.4.0...0.5.0) (2022-11-08)
 
 
