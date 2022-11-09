@@ -1,5 +1,12 @@
 
 
+## [0.8.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.8.0...0.8.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* fixing wrong dev version number by refactoring workflows, separating to build and dev deploy ([edbe3dd](https://github.com/attilagyongyosi/the-bad-request-blog/commit/edbe3dd7a55c969a0d56dfa943f8860dc53c5ab6))
+
 # [0.8.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.2...0.8.0) (2022-11-09)
 
 
