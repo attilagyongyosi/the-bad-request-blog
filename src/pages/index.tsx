@@ -1,24 +1,12 @@
 import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { LayoutComponent } from '../components/layout/layout.component';
 
-const versionQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                version
-            }
-        }
-    }`;
-
-function IndexPage() {
-    const version = useStaticQuery(versionQuery);
-
+const IndexPage: React.FC = () => {
     return (
-        <main>
+        <LayoutComponent>
             <h1>This is a beginning of a beautiful friendship</h1>
-            <footer data-testid="br-footer">{version.site.siteMetadata.version}</footer>
-        </main>
+        </LayoutComponent>
     );
-}
+};
 
 export default IndexPage;
