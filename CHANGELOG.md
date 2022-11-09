@@ -1,5 +1,12 @@
 
 
+# [0.8.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.2...0.8.0) (2022-11-09)
+
+
+### Features
+
+* introducing a LayoutComponent, extracting Footer ([d58a0a0](https://github.com/attilagyongyosi/the-bad-request-blog/commit/d58a0a044c511eafffe8e067d7765f7614043000))
+
 ## [0.7.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.7.1...0.7.2) (2022-11-08)
 
 
