@@ -27,7 +27,7 @@
         "deploy:prod": "components deploy --stage prod"
     },
     "dependencies": {
-        "gatsby": "4.24.4",
+        "gatsby": "5.0.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "the-new-css-reset": "1.7.3"
@@ -35,25 +35,25 @@
     "devDependencies": {
         "@attilagyongyosi/path-linter": "2.1.5",
         "@attilagyongyosi/eslint-config": "0.4.0",
-        "@commitlint/cli": "17.1.2",
-        "@commitlint/config-conventional": "17.1.0",
+        "@commitlint/cli": "17.2.0",
+        "@commitlint/config-conventional": "17.2.0",
         "@release-it/conventional-changelog": "5.1.1",
         "@serverless/components": "3.18.2",
         "@testing-library/jest-dom": "5.16.5",
         "@testing-library/react": "13.4.0",
-        "@typescript-eslint/parser": "5.40.1",
-        "@typescript-eslint/eslint-plugin": "5.40.1",
-        "@vitest/ui": "0.24.5",
+        "@typescript-eslint/parser": "5.42.1",
+        "@typescript-eslint/eslint-plugin": "5.42.1",
+        "@vitest/ui": "0.25.1",
         "concurrently": "7.5.0",
-        "eslint": "8.26.0",
-        "husky": "8.0.1",
+        "eslint": "8.27.0",
+        "husky": "8.0.2",
         "jsdom": "20.0.2",
         "prettier": "2.7.1",
         "release-it": "15.5.0",
-        "serverless": "3.23.0",
+        "serverless": "3.24.1",
         "typescript": "4.8.4",
-        "vite": "3.2.2",
-        "vitest": "0.24.5"
+        "vite": "3.2.3",
+        "vitest": "0.25.1"
     },
     "license": "0BSD"
 }
