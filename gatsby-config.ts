@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
         title: 'The Bad Request Blog',
         version
     },
-    plugins: [],
+    plugins: ['gatsby-plugin-sass'],
 };
 
 export default config;

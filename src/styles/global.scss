@@ -1,0 +1,10 @@
+@import 'theme';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
