@@ -29,7 +29,8 @@
     "dependencies": {
         "gatsby": "4.24.4",
         "react": "18.2.0",
-        "react-dom": "18.2.0"
+        "react-dom": "18.2.0",
+        "the-new-css-reset": "1.7.3"
     },
     "devDependencies": {
         "@attilagyongyosi/path-linter": "2.1.5",
