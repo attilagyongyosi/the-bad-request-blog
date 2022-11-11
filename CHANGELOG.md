@@ -1,5 +1,26 @@
 
 
+# [0.9.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.8.1...0.9.0) (2022-11-11)
+
+
+### Bug Fixes
+
+* only trigger deployment to dev when build was successful ([cba87d3](https://github.com/attilagyongyosi/the-bad-request-blog/commit/cba87d32e88b9a2105f056221cf45140c02fac15))
+
+
+### Features
+
+* designing and styling footer ([a697a5c](https://github.com/attilagyongyosi/the-bad-request-blog/commit/a697a5cdf216dd31794c639d98d30682bcf708a8))
+* designing and styling header ([b5d4f98](https://github.com/attilagyongyosi/the-bad-request-blog/commit/b5d4f9845e4871981a0644282da6a41cd055ef3c))
+* implementing a maintenance page ([5c4a770](https://github.com/attilagyongyosi/the-bad-request-blog/commit/5c4a7704ebcaaae66dc5fd365dc8990aee699197))
+* importing Source Sans Pro from Google Fonts ([4f076ac](https://github.com/attilagyongyosi/the-bad-request-blog/commit/4f076ac26f06628a896920569afac4b47ff94d87))
+* initial global layout styles for all pages ([c4a3c79](https://github.com/attilagyongyosi/the-bad-request-blog/commit/c4a3c7933b57687ddfe00cf9236169d505f6f944))
+* integrating SCSS ([e0683c5](https://github.com/attilagyongyosi/the-bad-request-blog/commit/e0683c588d98c55de87c88b781a804d9a3c5cbbd))
+* introducing global style, integrating CSS reset ([ff4e697](https://github.com/attilagyongyosi/the-bad-request-blog/commit/ff4e697c3918aff498153a206756f8432973150a))
+* introducing theme.scss where colors live ([8567476](https://github.com/attilagyongyosi/the-bad-request-blog/commit/85674762f35f4e5934edcd6001e2d91a0963667c))
+* separating header into its own element ([8c73909](https://github.com/attilagyongyosi/the-bad-request-blog/commit/8c739096cac91edd2e0f4a1464e7b88b92bd0e41))
+* updating workflows to run on Node.js 18 ([c422c44](https://github.com/attilagyongyosi/the-bad-request-blog/commit/c422c448ad4b02ded701c5d590719a3dd9efbcfe))
+
 ## [0.8.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.8.0...0.8.1) (2022-11-09)
 
 
