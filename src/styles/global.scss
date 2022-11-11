@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 @import 'theme';
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 html, body {
     width: 100vw;
@@ -8,6 +13,7 @@ html, body {
 body {
     background-color: $background-color;
     color: $text-color;
+    font-weight: 200;
 }
 
 #gatsby-focus-wrapper {
