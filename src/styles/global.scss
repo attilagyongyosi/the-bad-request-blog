@@ -1,10 +1,20 @@
 @import 'theme';
 
-* {
-    box-sizing: border-box;
+html, body {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
     background-color: $background-color;
     color: $text-color;
+}
+
+#gatsby-focus-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
