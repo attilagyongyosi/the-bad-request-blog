@@ -1,5 +1,12 @@
 
 
+## [0.9.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.9.0...0.9.1) (2022-11-11)
+
+
+### Bug Fixes
+
+* adding padding to main area ([dbabca0](https://github.com/attilagyongyosi/the-bad-request-blog/commit/dbabca0470f233a95507895f00a4c1a6d6004da8))
+
 # [0.9.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.8.1...0.9.0) (2022-11-11)
 
 
