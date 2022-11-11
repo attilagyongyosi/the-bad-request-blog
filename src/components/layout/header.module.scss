@@ -1,3 +1,5 @@
+@import '../../styles/theme';
+
 #header {
     align-self: start;
     padding: 8px 16px;
@@ -11,7 +13,7 @@
 }
 
 #bad {
-    color: #D84315;
+    color: $red;
     font-weight: 700;
 }
 
