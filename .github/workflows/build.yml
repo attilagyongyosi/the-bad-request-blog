@@ -2,6 +2,10 @@ name: Build
 
 on: push
 
+env:
+    NOTION_DATABASE_ID: ${secrets.NOTION_DATABASE_ID}
+    NOTION_TOKEN: ${secrets.NOTION_TOKEN}
+
 jobs:
     build:
         runs-on: ubuntu-latest

@@ -2,6 +2,10 @@ name: Release latest version to Prod
 
 on: workflow_dispatch
 
+env:
+    NOTION_DATABASE_ID: ${secrets.NOTION_DATABASE_ID}
+    NOTION_TOKEN: ${secrets.NOTION_TOKEN}
+
 jobs:
     build:
         runs-on: ubuntu-latest
