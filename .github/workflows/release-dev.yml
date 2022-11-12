@@ -11,17 +11,19 @@ jobs:
         runs-on: ubuntu-latest
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         steps:
-            -   name: Checkout Code
+            -   name: Checking out code
                 uses: actions/checkout@v3
                 with:
                     fetch-depth: 0
 
-            -   name: get-npm-version
+            -   name: Fetching current NPM package version
                 id: package-version
                 uses: martinbeentjes/npm-get-version-action@main
 
-            -   uses: actions/download-artifact@v3
+            -   name: Downloading build artifact from Build Workflow
+                uses: dawidd6/action-download-artifact@v2
                 with:
+                    workflow: build.yml
                     name: blog-build-${{ steps.package-version.outputs.current-version }}
 
             -   name: Deploying Artifact to SLS Prod Stage
