@@ -1,5 +1,25 @@
 
 
+# [0.10.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.9.1...0.10.0) (2022-11-12)
+
+
+### Bug Fixes
+
+* fixing dotenv file name in GH workflows, more logging ([c577d0c](https://github.com/attilagyongyosi/the-bad-request-blog/commit/c577d0cceb8bfc9ca4ad479610b7ec732bf13499))
+* fixing secret resolution in GitHub workflows ([6f84d4f](https://github.com/attilagyongyosi/the-bad-request-blog/commit/6f84d4fedb8f21d8b7879b1387724466387baea6))
+* fixing TypeScript issues in gatsby-config.ts ([82d0897](https://github.com/attilagyongyosi/the-bad-request-blog/commit/82d089750bc3603c49ed46c5f842d204bd0ae9bb))
+* locally generating .env file from GH secrets ([442c701](https://github.com/attilagyongyosi/the-bad-request-blog/commit/442c7013712ba1d07c7d96e6bf031e549807a7bb))
+* removing LayoutComponent from IndexPage as it will be wrapped programatically ([738981b](https://github.com/attilagyongyosi/the-bad-request-blog/commit/738981b8ddb3b20c1166cd1b653b2f0250db9eeb))
+* using a precooked GH action to create .env file ([b09860c](https://github.com/attilagyongyosi/the-bad-request-blog/commit/b09860c3f58626923bc29037d221395825ee753b))
+
+
+### Features
+
+* adding proper 404 page ([f1daa7b](https://github.com/attilagyongyosi/the-bad-request-blog/commit/f1daa7b763621b5fa7fa7b3964ef9990a294716f))
+* clicking on Header navigates to root ([cc47ff9](https://github.com/attilagyongyosi/the-bad-request-blog/commit/cc47ff986b1633b69570baf86884125ea52a84bf))
+* initial integration with Notion ([b748478](https://github.com/attilagyongyosi/the-bad-request-blog/commit/b748478ab0a6d2927a62998cf4609f61b4572e0d))
+* slugifying blog post titles for proper URLs ([a1d92f9](https://github.com/attilagyongyosi/the-bad-request-blog/commit/a1d92f93ba26db097d1bd554e34f26bba445798c))
+
 ## [0.9.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.9.0...0.9.1) (2022-11-11)
 
 
