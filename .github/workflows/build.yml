@@ -13,9 +13,9 @@ jobs:
 
             - name: Creating .env File
               run: |
-                touch .env
-                echo NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }} >> .env
-                echo NOTION_TOKEN=${{ secrets.NOTION_TOKEN }} >> .env
+                touch .env.production
+                echo NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }} >> .env.production
+                echo NOTION_TOKEN=${{ secrets.NOTION_TOKEN }} >> .env.production
 
             - name: Import GPG key
               id: import_gpg

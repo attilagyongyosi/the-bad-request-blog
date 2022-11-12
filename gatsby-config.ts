@@ -2,7 +2,16 @@ import * as dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
 import { version } from './package.json';
 
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+const envFileName = `.env.${process.env.NODE_ENV}`;
+console.info(`Reading environment variables from ${envFileName}...`);
+
+dotenv.config({ path: envFileName });
+
+const notionDatabaseId = process.env.NOTION_DATABASE_ID;
+const notionToken = process.env.NOTION_TOKEN;
+
+console.info(`Notion database ID successfully read from environment: ${!!notionDatabaseId}.`);
+console.info(`Notion integration token successfully read from environment: ${!!notionToken}.`);
 
 const config: GatsbyConfig = {
     siteMetadata: {
@@ -14,8 +23,8 @@ const config: GatsbyConfig = {
         {
             resolve: 'gatsby-source-notion-api',
             options: {
-                token: process.env.NOTION_TOKEN,
-                databaseId: process.env.NOTION_DATABASE_ID,
+                token: notionToken,
+                databaseId: notionDatabaseId,
                 propsToFrontmatter: false,
                 lowerTitleLevel: true
             }
