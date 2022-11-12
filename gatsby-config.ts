@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
 import { version } from './package.json';
 
@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
             options: {
                 token: process.env.NOTION_TOKEN,
                 databaseId: process.env.NOTION_DATABASE_ID,
-                propsToFrontmatter: true,
+                propsToFrontmatter: false,
                 lowerTitleLevel: true
             }
         }
