@@ -1,5 +1,12 @@
 
 
+## [0.10.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.10.0...0.10.1) (2022-11-12)
+
+
+### Bug Fixes
+
+* using GH action for dotenv file creation in production workflow too ([50f974e](https://github.com/attilagyongyosi/the-bad-request-blog/commit/50f974ebdf34f09495f12c2e5e6ea2afdb092962))
+
 # [0.10.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.9.1...0.10.0) (2022-11-12)
 
 
