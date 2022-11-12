@@ -1,5 +1,12 @@
 
 
+## [0.11.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.0...0.11.1) (2022-11-12)
+
+
+### Bug Fixes
+
+* using a different download GH action that can work between workflows ([ae27e18](https://github.com/attilagyongyosi/the-bad-request-blog/commit/ae27e182f7b3fa73cb7437aa09f253fb6548bf56))
+
 # [0.11.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.10.1...0.11.0) (2022-11-12)
 
 
