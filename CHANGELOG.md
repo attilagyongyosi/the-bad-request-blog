@@ -1,5 +1,12 @@
 
 
+# [0.11.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.10.1...0.11.0) (2022-11-12)
+
+
+### Features
+
+* sharing build artifact between build and deploy dev workflows ([449fa18](https://github.com/attilagyongyosi/the-bad-request-blog/commit/449fa18496b95b69b56dfe50cd6aa3bf5b28d9fb))
+
 ## [0.10.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.10.0...0.10.1) (2022-11-12)
 
 
