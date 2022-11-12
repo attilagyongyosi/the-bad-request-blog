@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import { slugify } from './src/utils/slug';
 
 const notionQuery = `query {
   allNotion {
@@ -18,14 +19,16 @@ export async function createPages(params): Promise<void> {
     const result = await params.graphql(notionQuery);
 
     result.data.allNotion.nodes.forEach(node => {
-        params.reporter.info(node.id);
+        const postUrl = slugify(node.title);
+        params.reporter.info(`Creating Notion blog post page with URL ${postUrl}...`);
         createPage({
-            path: `${node.id}`,
+            path: postUrl,
             component: blogPostTemplate,
             context: {
                 title: node.title,
                 content: node.markdownString
             },
         });
+        params.reporter.info(`Notion blog post page with URL ${postUrl} created.`);
     });
 }
