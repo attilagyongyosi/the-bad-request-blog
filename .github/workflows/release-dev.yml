@@ -16,11 +16,13 @@ jobs:
                 with:
                     fetch-depth: 0
 
-            - name: Creating .env File
-              run: |
-                  touch .env.production
-                  echo NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }} >> .env.production
-                  echo NOTION_TOKEN=${{ secrets.NOTION_TOKEN }} >> .env.production
+            -   name: Creating .env.production
+                uses: SpicyPizza/create-envfile@v1.3
+                with:
+                    envkey_NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+                    envkey_NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+                    file_name: .env.production
+                    fail_on_empty: true
 
             -   name: Install Dependencies
                 uses: actions/setup-node@v3
