@@ -45,3 +45,13 @@ jobs:
             - run: npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: get-npm-version
+              id: package-version
+              uses: martinbeentjes/npm-get-version-action@main
+
+            - name: Upload build artifact
+              uses: actions/upload-artifact@v3
+              with:
+                name: blog-build-${{ steps.package-version.outputs.current-version }}
+                path: public/
