@@ -1,5 +1,12 @@
 
 
+# [0.13.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.2...0.13.0) (2022-11-13)
+
+
+### Features
+
+* integrating gatsby-plugin-feed to generate RSS ([5bc583b](https://github.com/attilagyongyosi/the-bad-request-blog/commit/5bc583b4cc221d30d99dcd857fe5cb45c0de05e1))
+
 ## [0.12.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.1...0.12.2) (2022-11-13)
 
 
