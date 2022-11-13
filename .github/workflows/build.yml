@@ -55,6 +55,7 @@ jobs:
                     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
             -   name: Retrieve new package version
+                id: package-version
                 uses: martinbeentjes/npm-get-version-action@main
 
             -   name: Upload build artifact

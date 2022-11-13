@@ -18,6 +18,7 @@ jobs:
                     fetch-depth: 0
 
             -   name: Fetching current NPM package version
+                id: package-version
                 uses: martinbeentjes/npm-get-version-action@main
 
             -   name: Installing Serverless Components CLI for Deployment
