@@ -1,5 +1,16 @@
 import { resolve } from 'path';
 import { slugify } from './src/utils/slug';
+import { CreatePagesArgs } from 'gatsby';
+
+type NotionPagesQuery = {
+    allNotion: {
+        nodes: [{
+            id: string,
+            title: string,
+            markdownString: string
+        }]
+    }
+}
 
 const notionQuery = `query {
   allNotion {
@@ -12,13 +23,13 @@ const notionQuery = `query {
 }`;
 
 // Create blog pages dynamically
-export async function createPages(params): Promise<void> {
+export async function createPages(params: CreatePagesArgs): Promise<void> {
     const { createPage } = params.actions;
 
     const blogPostTemplate = resolve('src/components/blog/blog-post.component.tsx');
-    const result = await params.graphql(notionQuery);
+    const result = await params.graphql<NotionPagesQuery>(notionQuery);
 
-    result.data.allNotion.nodes.forEach(node => {
+    result.data?.allNotion.nodes.forEach(node => {
         const postUrl = slugify(node.title);
         params.reporter.info(`Creating Notion blog post page with URL ${postUrl}...`);
         createPage({
