@@ -1,5 +1,12 @@
 
 
+## [0.12.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.0...0.12.1) (2022-11-13)
+
+
+### Bug Fixes
+
+* fixing workflow name in release-dev ([488ede3](https://github.com/attilagyongyosi/the-bad-request-blog/commit/488ede3c93c6e243dff2edcd7c4445ee8e4bc85b))
+
 # [0.12.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.2...0.12.0) (2022-11-13)
 
 
