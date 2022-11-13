@@ -43,6 +43,9 @@ jobs:
             -   name: Install dependencies
                 run: npm ci
 
+            -   name: Analyze Dependency Drift
+                run: npm run metric:libyear
+
             -   name: Executing tests
                 run: npm test
 
