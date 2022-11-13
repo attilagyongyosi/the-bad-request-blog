@@ -1,5 +1,12 @@
 
 
+# [0.12.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.2...0.12.0) (2022-11-13)
+
+
+### Features
+
+* updating workflows, prod deploy now downloads existing artifact too ([6032fc0](https://github.com/attilagyongyosi/the-bad-request-blog/commit/6032fc01a5e7cfe094392c552150b667ada06084))
+
 ## [0.11.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.1...0.11.2) (2022-11-12)
 
 
