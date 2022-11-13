@@ -2,7 +2,7 @@ name: Release latest version to Dev
 
 on:
     workflow_run:
-        workflows: [Build]
+        workflows: [Build & Bump]
         types:
             - completed
 
