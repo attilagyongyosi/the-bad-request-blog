@@ -1,5 +1,12 @@
 
 
+## [0.11.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.1...0.11.2) (2022-11-12)
+
+
+### Bug Fixes
+
+* installing Serverless CLI on deploy workflow ([c5dcd8b](https://github.com/attilagyongyosi/the-bad-request-blog/commit/c5dcd8b55c6b25f9359f800746fad977dbcafcc7))
+
 ## [0.11.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.11.0...0.11.1) (2022-11-12)
 
 
