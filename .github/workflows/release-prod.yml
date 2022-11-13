@@ -11,24 +11,24 @@ jobs:
                 with:
                     fetch-depth: 0
 
-            -   name: Creating .env.production
-                uses: SpicyPizza/create-envfile@v1.3
-                with:
-                    envkey_NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-                    envkey_NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-                    file_name: .env.production
-                    fail_on_empty: true
+            -   name: Fetching current NPM package version
+                uses: martinbeentjes/npm-get-version-action@main
 
-            -   name: Install Dependencies
+            -   name: Installing Serverless Components CLI for Deployment
                 uses: actions/setup-node@v3
                 with:
                     node-version: 18
                     cache: 'npm'
-            -   run: npm ci
-            -   run: npm run build
+            -   run: npm i serverless@3.24.1 @serverless/components@3.18.2
+
+            -   name: Downloading build artifact from Build Workflow
+                uses: dawidd6/action-download-artifact@v2
+                with:
+                    workflow: build.yml
+                    name: blog-build-${{ steps.package-version.outputs.current-version }}
+                    path: public/
 
             -   name: Deploying Artifact to SLS Prod Stage
-                id: sls-deploy-prod
                 run: npm run deploy:prod
                 env:
                     SERVERLESS_ACCESS_KEY: ${{ secrets.SLS_ACCESS_KEY }}

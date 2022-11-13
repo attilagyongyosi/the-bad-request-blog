@@ -1,57 +1,65 @@
-name: Build
+name: Build & Bump
 
 on: push
 
 jobs:
     build:
+        name: Builds a new release
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout Code
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 0
+            -   name: Checkout code
+                uses: actions/checkout@v3
+                with:
+                    fetch-depth: 0
 
-            - name: Creating .env.production
-              uses: SpicyPizza/create-envfile@v1.3
-              with:
-                envkey_NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-                envkey_NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-                file_name: .env.production
-                fail_on_empty: true
+            -   name: Create .env.production
+                uses: SpicyPizza/create-envfile@v1.3
+                with:
+                    envkey_NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+                    envkey_NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+                    file_name: .env.production
+                    fail_on_empty: true
 
-            - name: Import GPG key
-              id: import_gpg
-              uses: crazy-max/ghaction-import-gpg@v5
-              with:
-                  git_user_signingkey: true
-                  git_tag_gpgsign: true
-                  git_commit_gpgsign: true
-                  gpg_private_key: ${{ secrets.SIGN_GPG_KEY }}
-                  passphrase: ${{ secrets.SIGN_GPG_PASS }}
+            -   name: Import GPG key
+                uses: crazy-max/ghaction-import-gpg@v5
+                with:
+                    git_user_signingkey: true
+                    git_tag_gpgsign: true
+                    git_commit_gpgsign: true
+                    gpg_private_key: ${{ secrets.SIGN_GPG_KEY }}
+                    passphrase: ${{ secrets.SIGN_GPG_PASS }}
 
-            - name: git config
-              run: |
-                git config user.name "${GITHUB_ACTOR}"
-                git config user.email "attilagyongyosi0@gmail.com"
+            -   name: Configure Git
+                run: |
+                    git config user.name "${GITHUB_ACTOR}"
+                    git config user.email "attilagyongyosi0@gmail.com"
 
-            - name: Install Dependencies
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18
-                  cache: 'npm'
-            - run: npm ci
-            - run: npm test
-            - run: npm run build
-            - run: npm run release
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            -   name: Set up Node.js
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 18
+                    cache: 'npm'
 
-            - name: get-npm-version
-              id: package-version
-              uses: martinbeentjes/npm-get-version-action@main
+            -   name: Install dependencies
+                run: npm ci
 
-            - name: Upload build artifact
-              uses: actions/upload-artifact@v3
-              with:
-                name: blog-build-${{ steps.package-version.outputs.current-version }}
-                path: public/
+            -   name: Executing tests
+                run: npm test
+
+            -   name: Building production artifact
+                run: npm run build
+
+            -   name: Bump version
+                run: npm run release
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            -   name: Retrieve new package version
+                uses: martinbeentjes/npm-get-version-action@main
+
+            -   name: Upload build artifact
+                uses: actions/upload-artifact@v3
+                with:
+                    name: blog-build-${{ steps.package-version.outputs.current-version }}
+                    path: public/
+                    retention-days: 30
