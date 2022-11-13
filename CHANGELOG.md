@@ -1,5 +1,12 @@
 
 
+## [0.12.2](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.1...0.12.2) (2022-11-13)
+
+
+### Bug Fixes
+
+* assigning ID to package version step to not break later steps ([2948149](https://github.com/attilagyongyosi/the-bad-request-blog/commit/2948149d6c3c2018cb8cb418b0ee8c498f72e3a5))
+
 ## [0.12.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.0...0.12.1) (2022-11-13)
 
 
