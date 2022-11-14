@@ -1,5 +1,20 @@
 
 
+# [0.14.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.13.0...0.14.0) (2022-11-14)
+
+
+### Bug Fixes
+
+* creating proper types for Notion plugin config ([d079287](https://github.com/attilagyongyosi/the-bad-request-blog/commit/d079287a71863fcbfed96d2e6e092d400904b042))
+
+
+### Features
+
+* actually committing externalized Gatsby config files ([2d95efd](https://github.com/attilagyongyosi/the-bad-request-blog/commit/2d95efd3d88fdb2ec1720f718cbbeb13b219bc60))
+* extracting Gatsby plugin configuration code to config folder ([143c7b7](https://github.com/attilagyongyosi/the-bad-request-blog/commit/143c7b70c39155748249c34c096f6053704beb04))
+* initial footer link to RSS feed ([1a04e1a](https://github.com/attilagyongyosi/the-bad-request-blog/commit/1a04e1ac0e9af95ba6736f0222ea46da34db9af1))
+* integrating libyear measurement, dependency drift analysis ([4c3e30b](https://github.com/attilagyongyosi/the-bad-request-blog/commit/4c3e30baf18fd96f2ab02aa304d288b674007b3f))
+
 # [0.13.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.12.2...0.13.0) (2022-11-13)
 
 
