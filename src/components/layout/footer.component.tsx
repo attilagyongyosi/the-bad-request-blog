@@ -14,6 +14,7 @@ const versionQuery = graphql`
 export const FooterComponent: React.FC = () => {
     const version = useStaticQuery(versionQuery);
     return <footer id={styles.footer} data-testid="br-footer">
-        made with <span id={styles.love} className={'red'}>love</span> by attilagyongyosi | v{version.site.siteMetadata.version}
+        made with <span id={styles.love} className={'red'}>love</span> by attilagyongyosi | v{version.site.siteMetadata.version} |
+        <a href="/rss.xml" target="_blank" className={'material-symbols-outlined'}>rss_feed</a>
     </footer>;
 };
