@@ -1,5 +1,7 @@
 
 
+## [0.14.1](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.14.0...0.14.1) (2023-01-10)
+
 # [0.14.0](https://github.com/attilagyongyosi/the-bad-request-blog/compare/0.13.0...0.14.0) (2022-11-14)
 
 
